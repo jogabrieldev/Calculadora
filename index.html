@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      <link rel="shortcut icon" href="img/Gartoon-Team-Gartoon-Devices-Network-wired.512.png" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+      <title>calculadora</title>
+      
+    </head>
+    <body style="background-color: darkslategrey
+    ;"
+      >
+      <div class="fundo">
+        <div style="text-align: center;"><h1>joao gabriel de jesus cunha</h1></div>
+        <div class="calculadora">
+          <h1>calculadora</h1>
+          <p id="resultado"></p>
+          <div>
+            <table style="display: flex;justify-content: center;">
+              <tr>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="clearDisplay()"
+                  >
+                    c
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="deleteLastChar()"
+                  >
+                    
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendOperator('/')"
+                  >
+                    /
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendOperator('*')"
+                  >
+                    x
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('7')"
+                  >
+                    7
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('8')"
+                  >
+                    8
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('9')"
+                  >
+                    9
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendOperator('-')"
+                  >
+                    -
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('4')"
+                  >
+                    4
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('5')"
+                  >
+                    5
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('6')"
+                  >
+                    6
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendOperator('+')"
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    ondblclick="appendToDisplay('1')"
+                  >
+                    1
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('2')"
+                  >
+                    2
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('3')"
+                  >
+                    3
+                  </button>
+                </td>
+                <td rowspan="2">
+                  <button
+                    class="botao"
+                    style="height: 75px; width: 35px"
+                    onclick="calculate()"
+                  >
+                    =
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button
+                    class="botao"
+                    style="width: 80px"
+                    onclick="appendToDisplay('0')"
+                  >
+                    0
+                  </button>
+                </td>
+                <td>
+                  <button
+                    class="botao"
+                    style="width: 35px"
+                    onclick="appendToDisplay('.')"
+                  >
+                    .
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+  </html>
